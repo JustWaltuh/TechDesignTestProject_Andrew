@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Clickable_Cloud : MonoBehaviour
+public class Clickable_Hero : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        Event_Manager.Send_Cloud_Click();
+        Event_Manager.Send_Hero_Click();
     }
 }

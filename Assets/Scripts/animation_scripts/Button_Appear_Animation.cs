@@ -6,7 +6,7 @@ public class Button_Appear_Animation : MonoBehaviour
 
     private void Start()
     {
-      Event_Manager.On_Cloud_Click += Enable_Button;
+      Event_Manager.On_Hero_Click += Enable_Button;
     }
 
     private void Enable_Button()
@@ -17,6 +17,6 @@ public class Button_Appear_Animation : MonoBehaviour
 
     private void OnDestroy()
     {
-        Event_Manager.On_Cloud_Click -= Enable_Button;
+        Event_Manager.On_Hero_Click -= Enable_Button;
     }
 }

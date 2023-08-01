@@ -3,10 +3,10 @@ using System;
 
 public static class Event_Manager
 {
-    public static Action On_Cloud_Click;
+    public static Action On_Hero_Click;
 
-    public static void Send_Cloud_Click()
+    public static void Send_Hero_Click()
     {
-        On_Cloud_Click?.Invoke();
+        On_Hero_Click?.Invoke();
     }
 }
