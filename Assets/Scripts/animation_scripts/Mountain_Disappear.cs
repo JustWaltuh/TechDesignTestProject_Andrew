@@ -6,24 +6,24 @@ public class Mountain_Disappear : MonoBehaviour
 {
     [SerializeField] private float fade_speed;
 
-    private SpriteRenderer sprite_renderer;
+    private SpriteRenderer button_image;
 
     private void Start()
     {
-        sprite_renderer = GetComponent<SpriteRenderer>();
+        button_image = GetComponent<SpriteRenderer>();
     }
 
     private void OnMouseDown()
     {
-        StartCoroutine(Hide_Mountains());  
+        StartCoroutine(Hide_Mountains());
     }
 
     private IEnumerator Hide_Mountains()
     {
-        if (sprite_renderer.color.a < 1)
+        if (button_image.color.a > 0)
         {
             yield return new WaitForEndOfFrame();
-            sprite_renderer.color = new Color(1, 1, 1, sprite_renderer.color.a - fade_speed);
+            button_image.color = new Color(1, 1, 1, button_image.color.a - fade_speed);
 
             StartCoroutine(Hide_Mountains());
         }
