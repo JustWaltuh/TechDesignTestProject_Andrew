@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Scene_Buttons
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 2917dcd1000eba043bf33bcafc2555ed, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: ed45c092d11d8c84ca69f4402cd1f2be, type: 2}
+  - {fileID: 11400000, guid: 53819507b852f4a4ab6abd6a9fd23610, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []
